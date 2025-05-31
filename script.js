@@ -5,7 +5,7 @@ document.getElementById("healthForm").addEventListener("submit", function(event)
     let objectData = {};
     formData.forEach((value, key) => objectData[key] = value);
 
-    fetch("https://script.google.com/macros/s/AKfycbzBHZunzvp35vZMVKzPJf7PQchyV9RCz7SjHuM17wnMyjUmy64Z_9d8jkynT1xQumlBag/exec", { // Replace with your Web App URL
+    fetch("https://script.google.com/macros/s/AKfycbzYr7MrwK43i82mQKkIQDGGuiTbJBNP-ehLM0oF8lHyFJe0d5xFtSZLcFwJCCNZ4Ack4w/exec", { // Replace with your Web App URL
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams(objectData).toString()
