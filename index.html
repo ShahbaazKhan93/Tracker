@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pregnancy Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Pregnancy Health Tracker 💖</h1>
+        <p>Monitor your health and keep track of your daily progress!</p>
+
+        <form id="healthForm">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="Date" required>
+
+            <label for="medicine">Medicine Taken:</label>
+            <select id="medicine" name="Medicine">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+
+            <label for="water">Water Intake:</label>
+            <select id="water" name="Water">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+
+            <label for="walk">Walk Done?</label>
+            <select id="walk" name="Walk">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+
+            <label for="sunlight">Got Sunlight?</label>
+            <select id="sunlight" name="Sunlight">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+
+            <label for="sleep">Hours of Sleep:</label>
+            <input type="number" id="sleep" name="Sleep" min="1" max="15">
+
+            <label for="vomit">Vomit Count:</label>
+            <input type="number" id="vomit" name="VomitCount" min="1" max="20">
+
+            <label for="mood">Mood Today:</label>
+            <select id="mood" name="Mood">
+                <option value="Happy">Happy 😊</option>
+                <option value="Irritated">Irritated 😠</option>
+                <option value="Sad">Sad 😢</option>
+                <option value="Mood Swings">Mood Swings 😵</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="message"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
